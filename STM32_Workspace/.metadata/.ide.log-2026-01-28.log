@@ -1,9 +1,0 @@
-2026-01-28 14:00:29,410 [INFO] Activator:176 - 
-
-
-2026-01-28 14:00:29,421 [INFO] Activator:177 - !SESSION log4j initialized
-2026-01-28 14:00:36,235 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] 
-2026-01-28 14:00:39,161 [ERROR] ConfigurationRetriever:142 - IOException on connection: Read timed out
-2026-01-28 20:38:15,971 [ERROR] ConfigurationRetriever:142 - IOException on connection: sw-center.st.com
-2026-01-28 20:38:15,972 [ERROR] ConfigurationRetriever:142 - IOException on connection: sw-center.st.com
-2026-01-28 20:38:15,973 [ERROR] ConfigurationRetriever:142 - IOException on connection: sw-center.st.com
