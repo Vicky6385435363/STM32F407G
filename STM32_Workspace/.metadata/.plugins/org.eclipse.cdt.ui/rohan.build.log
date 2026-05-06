@@ -1,0 +1,10 @@
+23:03:18 **** Incremental Build of configuration Debug for project rohan ****
+make -j16 all 
+arm-none-eabi-size  rohan.elf 
+   text	   data	    bss	    dec	    hex	filename
+  14252	     92	   2092	  16436	   4034	rohan.elf
+Finished building: default.size.stdout
+ 
+
+23:03:19 Build Finished. 0 errors, 0 warnings. (took 482ms)
+

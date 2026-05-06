@@ -1,0 +1,22 @@
+12:30:20 **** Incremental Build of configuration Debug for project 008_queue_and_timers ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/task_handler.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I"D:/Embedded/STM32_Workspace/common/ThirdParty/FreeRTOS/include" -I"D:/Embedded/STM32_Workspace/common/ThirdParty/SEGGER/Config" -I"D:/Embedded/STM32_Workspace/common/ThirdParty/SEGGER/OS" -I"D:/Embedded/STM32_Workspace/common/ThirdParty/SEGGER/SEGGER" -I"D:/Embedded/STM32_Workspace/common/ThirdParty/FreeRTOS/portable/GCC/ARM_CM4F" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/task_handler.d" -MT"Core/Src/task_handler.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/task_handler.o"
+../Core/Src/task_handler.c: In function 'rtc_task':
+../Core/Src/task_handler.c:199:25: warning: enumeration value 'sMainMenu' not handled in switch [-Wswitch]
+  199 |                         switch(curr_state)
+      |                         ^~~~~~
+../Core/Src/task_handler.c:199:25: warning: enumeration value 'sLedEffect' not handled in switch [-Wswitch]
+arm-none-eabi-gcc -o "008_queue_and_timers.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Embedded\STM32_Workspace\008_queue_and_timers\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="008_queue_and_timers.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 008_queue_and_timers.elf
+ 
+arm-none-eabi-size  008_queue_and_timers.elf 
+arm-none-eabi-objdump -h -S 008_queue_and_timers.elf  > "008_queue_and_timers.list"
+   text	   data	    bss	    dec	    hex	filename
+  37396	    128	 105048	 142572	  22cec	008_queue_and_timers.elf
+Finished building: default.size.stdout
+ 
+Finished building: 008_queue_and_timers.list
+ 
+
+12:30:21 Build Finished. 0 errors, 2 warnings. (took 1s.135ms)
+

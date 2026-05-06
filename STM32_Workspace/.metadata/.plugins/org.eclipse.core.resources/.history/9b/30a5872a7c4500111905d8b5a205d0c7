@@ -1,0 +1,25 @@
+/* Includes ------------------------------------------------------------------*/
+#include "main.h"
+#include "i2c-lcd.h"
+
+// ... (In the main function, after HAL_Init and SystemClock_Config)
+
+int main(void) {
+  HAL_Init();
+  SystemClock_Config();
+  MX_GPIO_Init();
+  MX_I2C1_Init();
+
+  // 1. Initialize the LCD
+  lcd_init();
+
+  // 2. Display Message
+  lcd_put_cur(0, 0);
+  lcd_send_string("STM32 F103 Test");
+  lcd_put_cur(1, 0);
+  lcd_send_string("I2C LCD Working!");
+
+  while (1) {
+      // Toggle a cursor or update a value here if you like
+  }
+}

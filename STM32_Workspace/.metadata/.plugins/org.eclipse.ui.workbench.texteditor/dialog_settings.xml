@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item key="hasShownOverlayPopupBefore" value="true"/>
+	<item key="replaceBarOpen" value="false"/>
+	<list key="searchhistory">
+		<item value="uart"/>
+		<item value="LED_blue_task"/>
+		<item value="status_button"/>
+		<item value="up"/>
+		<item value="SEGGER_RTT_CONFIG_BUFFER_SIZE_UP"/>
+		<item value="SEGGER_SYSVIEW_Conf"/>
+		<item value="FreeRTOS Hello world Application"/>
+		<item value="HAL_TIM_PeriodElapsedCallback"/>
+		<item value="HAL_TIM_PeriodElapsedCallbac"/>
+	</list>
+</section>

@@ -1,0 +1,17 @@
+22:54:41 **** Incremental Build of configuration Debug for project 006_LED_BUTTON_ISR ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/stm32f4xx_hal_msp.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I"D:/Embedded/STM32_Workspace/common/ThirdParty/FreeRTOS/include" -I"D:/Embedded/STM32_Workspace/common/ThirdParty/SEGGER/Config" -I"D:/Embedded/STM32_Workspace/common/ThirdParty/SEGGER/OS" -I"D:/Embedded/STM32_Workspace/common/ThirdParty/SEGGER/SEGGER" -I"D:/Embedded/STM32_Workspace/common/ThirdParty/FreeRTOS/portable/GCC/ARM_CM4F" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f4xx_hal_msp.d" -MT"Core/Src/stm32f4xx_hal_msp.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f4xx_hal_msp.o"
+arm-none-eabi-gcc -o "006_LED_BUTTON_ISR.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Embedded\STM32_Workspace\006_LED_BUTTON_ISR\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="006_LED_BUTTON_ISR.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 006_LED_BUTTON_ISR.elf
+ 
+arm-none-eabi-size  006_LED_BUTTON_ISR.elf 
+arm-none-eabi-objdump -h -S 006_LED_BUTTON_ISR.elf  > "006_LED_BUTTON_ISR.list"
+   text	   data	    bss	    dec	    hex	filename
+  31312	     16	 113312	 144640	  23500	006_LED_BUTTON_ISR.elf
+Finished building: default.size.stdout
+ 
+Finished building: 006_LED_BUTTON_ISR.list
+ 
+
+22:54:42 Build Finished. 0 errors, 0 warnings. (took 713ms)
+

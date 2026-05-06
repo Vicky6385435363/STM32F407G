@@ -1,0 +1,13 @@
+/*
+ * I2C_hal.c
+ *
+ *  Created on: 01-May-2026
+ *      Author: vigne
+ */
+
+#ifndef INC_I2C_HAL_C_
+#define INC_I2C_HAL_C_
+
+
+
+#endif /* INC_I2C_HAL_C_ */

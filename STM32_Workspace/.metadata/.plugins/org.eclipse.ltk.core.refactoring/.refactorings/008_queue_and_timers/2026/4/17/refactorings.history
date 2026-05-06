@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;008_queue_and_timers/Core/Src/RTC.C&apos; to &apos;rtc.c&apos;" description="Rename resource &apos;RTC.C&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Core/Src/RTC.C" name="rtc.c" stamp="1776579495165" updateReferences="true"/>
+</session>
